@@ -49,6 +49,7 @@ node_modules/
 .idea/
 .vscode/
 *.sw*
+settings.json
 
 # misc
 .serverless/
