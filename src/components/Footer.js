@@ -44,7 +44,7 @@ const Footer = () => (
       const { name, socialLinks } = data.contentfulAbout;
 
       return (
-        <Box p={3} backgroundColor="dark_blue_colorsjs" as="footer">
+        <Box p={3} backgroundColor="footer_bg" as="footer">
           <FooterContainer>
             <Fade left>
               <TextFooter fontSize={[2, 3]}>
@@ -63,7 +63,7 @@ const Footer = () => (
               <Fade right>
                 {socialLinks.map(({ id, ...rest }) => (
                   <Box mx={[2, 3]} fontSize={[4, 5]} key={id}>
-                    <SocialLink {...rest} color="white_colorsjs" />
+                    <SocialLink {...rest} color="footer_social_links" />
                   </Box>
                 ))}
               </Fade>
