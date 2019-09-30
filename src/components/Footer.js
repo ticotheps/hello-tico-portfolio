@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
-import { Text, Box, Link, Flex } from 'rebass';
-import Fade from 'react-reveal/Fade';
-import SocialLink from './SocialLink';
+import React from "react";
+import styled from "styled-components";
+import { StaticQuery, graphql } from "gatsby";
+import { Text, Box, Link, Flex } from "rebass";
+import Fade from "react-reveal/Fade";
+import SocialLink from "./SocialLink";
 
 const FooterContainer = styled.div`
   min-width: 320px;
@@ -17,10 +17,10 @@ const FooterContainer = styled.div`
 `;
 
 const TextFooter = styled(Text)`
-  color: ${props => props.theme.colors.background};
+  color: ${props => props.theme.colors.white_colorsjs};
 
   & a {
-    color: ${props => props.theme.colors.background};
+    color: ${props => props.theme.colors.white_colorsjs};
   }
 `;
 
@@ -63,7 +63,7 @@ const Footer = () => (
               <Fade right>
                 {socialLinks.map(({ id, ...rest }) => (
                   <Box mx={[2, 3]} fontSize={[4, 5]} key={id}>
-                    <SocialLink {...rest} color="background" />
+                    <SocialLink {...rest} color="white_colorsjs" />
                   </Box>
                 ))}
               </Fade>
