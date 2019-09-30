@@ -17,10 +17,10 @@ const FooterContainer = styled.div`
 `;
 
 const TextFooter = styled(Text)`
-  color: ${props => props.theme.colors.white_colorsjs};
+  color: ${props => props.theme.colors.footer_text};
 
   & a {
-    color: ${props => props.theme.colors.white_colorsjs};
+    color: ${props => props.theme.colors.footer_text};
   }
 `;
 

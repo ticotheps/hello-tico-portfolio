@@ -15,5 +15,6 @@ module.exports = {
   secondaryLight: "#20ffb9",
   /* dark blue; top-right triangle in "Landing" section + sticky navBar */
   secondaryDark: "#3257fa",
-  card_bg: "#FFFFFF" /* white */
+  card_bg: "#FFFFFF" /* white */,
+  footer_text: "#FFFFFF" /* white */
 };
