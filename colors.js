@@ -18,6 +18,7 @@ module.exports = {
   /*------------------Components-----------------*/
   /* Card.js */
   card_bg: "#FFFFFF" /* white */,
+  onHover_card_bg: "#20ffb9" /* medium spring green */,
   /* Footer.js */
   footer_text: "#FFFFFF" /* white */,
   footer_bg: "#3257fa" /* royal blue */,
