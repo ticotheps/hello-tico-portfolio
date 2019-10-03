@@ -28,5 +28,8 @@ module.exports = {
   section_heading_underline: "#7c00e7" /* dark violet */,
   onHover_section_heading_underline: "#20ffb9" /* medium spring green */,
   /* MarkdownRenderer.js */
-  onHover_aboutMe_text_bg: "#3257fa" /* royal blue */
+  onHover_aboutMe_text_bg: "#3257fa" /* royal blue */,
+  /* MouseIcon.js */
+  mouse_icon_border: "#3257fa" /* royal blue */,
+  mouse_icon_dot: "#3257fa" /* royal blue */
 };
