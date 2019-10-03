@@ -39,5 +39,7 @@ module.exports = {
   /* SocialLink.js */
   social_link: "#3257fa" /* royal blue */,
   onHover_social_link: "#7c00e7" /* dark violet */,
-  onHover_underline_social_link: "#20ffb9" /* medium spring green */
+  onHover_underline_social_link: "#20ffb9" /* medium spring green */,
+  /* About.js */
+  profile_pic_border: "#7c00e7" /* dark violet */
 };
