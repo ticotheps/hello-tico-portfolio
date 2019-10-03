@@ -7,6 +7,7 @@ import Fade from "react-reveal/Fade";
 import Section from "../components/Section";
 import Triangle from "../components/Triangle";
 import markdownRenderer from "../components/MarkdownRenderer";
+import family_photo from "../../media/family.png";
 
 const Background = () => (
   <div>
@@ -34,7 +35,7 @@ const Background = () => (
 
 const ProfilePicture = styled(Image)`
   border-radius: 50%;
-  border: 2px solid ${props => props.theme.colors.profile_pic_border};
+  border: 3px solid ${props => props.theme.colors.profile_pic_border};
   transition: all 0.25s ease-out;
 
   &:hover {
@@ -56,7 +57,7 @@ const About = () => (
             }
             profile {
               title
-              image: resize(width: 450, quality: 100) {
+              image: resize(width: 500, quality: 100) {
                 src
               }
             }
@@ -64,7 +65,7 @@ const About = () => (
         }
       `}
       render={data => {
-        const { aboutMe, profile } = data.contentfulAbout;
+        const { aboutMe } = data.contentfulAbout;
         return (
           <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
             <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]}>
@@ -82,8 +83,8 @@ const About = () => (
             >
               <Fade right>
                 <ProfilePicture
-                  src={profile.image.src}
-                  alt={profile.title}
+                  src={family_photo}
+                  alt="Tico's family (minus Wynnie)"
                   mt={[4, 4, 0]}
                   ml={[0, 0, 1]}
                 />
