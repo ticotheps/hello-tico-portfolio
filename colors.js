@@ -43,5 +43,7 @@ module.exports = {
   /* About.js */
   profile_pic_border: "#7c00e7" /* dark violet */,
   /* Projects.js */
-  project_card_font_container: "#20ffb9" /* medium spring green */
+  project_card_font_container: "#20ffb9" /* medium spring green */,
+  /* Writing.js */
+  writing_card_date_container: "#20ffb9" /* medium spring green */
 };

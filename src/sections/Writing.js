@@ -1,38 +1,38 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Heading, Text, Flex, Box } from 'rebass';
-import { StaticQuery, graphql } from 'gatsby';
-import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
-import FontAwesomeIcon from 'react-fontawesome';
-import Section from '../components/Section';
-import { CardContainer, Card } from '../components/Card';
-import Triangle from '../components/Triangle';
-import ImageSubtitle from '../components/ImageSubtitle';
+import React from "react";
+import PropTypes from "prop-types";
+import { Heading, Text, Flex, Box } from "rebass";
+import { StaticQuery, graphql } from "gatsby";
+import styled from "styled-components";
+import Fade from "react-reveal/Fade";
+import FontAwesomeIcon from "react-fontawesome";
+import Section from "../components/Section";
+import { CardContainer, Card } from "../components/Card";
+import Triangle from "../components/Triangle";
+import ImageSubtitle from "../components/ImageSubtitle";
 
-const MEDIUM_CDN = 'https://cdn-images-1.medium.com/max/400';
-const MEDIUM_URL = 'https://medium.com';
+const MEDIUM_CDN = "https://cdn-images-1.medium.com/max/400";
+const MEDIUM_URL = "https://medium.com";
 
 const Background = () => (
   <div>
     <Triangle
       color="backgroundDark"
-      height={['15vh', '10vh']}
-      width={['100vw', '100vw']}
+      height={["15vh", "10vh"]}
+      width={["100vw", "100vw"]}
       invertX
     />
 
     <Triangle
       color="secondary"
-      height={['50vh', '40vh']}
-      width={['70vw', '40vw']}
+      height={["50vh", "40vh"]}
+      width={["70vw", "40vw"]}
       invertY
     />
 
     <Triangle
       color="primaryDark"
-      height={['40vh', '15vh']}
-      width={['100vw', '100vw']}
+      height={["40vh", "15vh"]}
+      width={["100vw", "100vw"]}
       invertX
       invertY
     />
@@ -54,13 +54,19 @@ const EllipsisHeading = styled(Heading)`
 `;
 
 const Post = ({ title, text, image, url, date, time }) => (
-  <Card onClick={() => window.open(url, '_blank')} pb={4}>
+  <Card onClick={() => window.open(url, "_blank")} pb={4}>
     <EllipsisHeading m={3} p={1}>
       {title}
     </EllipsisHeading>
     {image && <CoverImage src={image} height="200px" alt={title} />}
     <Text m={3}>{text}</Text>
-    <ImageSubtitle bg="primary" color="white" x="right" y="bottom" round>
+    <ImageSubtitle
+      bg="writing_card_date_container"
+      color="secondaryDark"
+      x="right"
+      y="bottom"
+      round
+    >
       {`${date} - ${Math.ceil(time)} min`}
     </ImageSubtitle>
   </Card>
@@ -72,7 +78,7 @@ Post.propTypes = {
   image: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  time: PropTypes.number.isRequired,
+  time: PropTypes.number.isRequired
 };
 
 const parsePost = author => postFromGraphql => {
@@ -89,19 +95,19 @@ const parsePost = author => postFromGraphql => {
     text: virtuals.subtitle,
     image,
     url: `${MEDIUM_URL}/${author.username}/${uniqueSlug}`,
-    Component: Post,
+    Component: Post
   };
 };
 
 const MorePosts = ({ username, name, number }) => (
   <Card
-    onClick={() => window.open(`${MEDIUM_URL}/${username}/`, '_blank')}
+    onClick={() => window.open(`${MEDIUM_URL}/${username}/`, "_blank")}
     p={4}
   >
     <Flex
       flexDirection="column"
       justifyContent="space-between"
-      style={{ height: '100%' }}
+      style={{ height: "100%" }}
     >
       <Box>
         <EllipsisHeading fontSize={5} my={2}>
@@ -127,7 +133,7 @@ const MorePosts = ({ username, name, number }) => (
 MorePosts.propTypes = {
   username: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  number: PropTypes.number,
+  number: PropTypes.number
 };
 
 const edgeToArray = data => data.edges.map(edge => edge.node);
@@ -172,9 +178,9 @@ const Writing = () => (
       if (diffAmountArticles > 0) {
         posts.push({
           ...author,
-          id: 'more-field',
+          id: "more-field",
           number: diffAmountArticles,
-          Component: MorePosts,
+          Component: MorePosts
         });
       }
 
