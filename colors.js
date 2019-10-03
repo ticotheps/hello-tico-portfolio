@@ -31,11 +31,11 @@ module.exports = {
   /* MarkdownRenderer.js */
   onHover_aboutMe_text_bg: "#3257fa" /* royal blue */,
   /* MouseIcon.js */
-  mouse_icon_border: "#7c00e7" /* dark violet */,
-  mouse_icon_dot: "#7c00e7" /* dark violet */,
+  mouse_icon_border: "#3257fa" /* royal blue */,
+  mouse_icon_dot: "#3257fa" /* royal blue */,
   /* Section.js */
   section_heading: "#ff6d6d" /* salmon */,
   /* SocialLink.js */
-  social_link: "#3257fa" /* royal blue */,
+  social_link: "#ff6d6d" /* salmon */,
   onHover_social_link: "#05d1ff" /* deep sky blue */
 };
