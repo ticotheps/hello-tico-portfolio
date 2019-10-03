@@ -13,6 +13,8 @@ const IconLink = styled(Link)`
 
   &:hover {
     color: ${props => props.theme.colors.onHover_social_link};
+    border-bottom: 5px solid
+      ${props => props.theme.colors.onHover_underline_social_link};
   }
 `;
 

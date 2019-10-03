@@ -1,45 +1,45 @@
-import React, { Fragment } from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import { Heading, Flex, Box, Text } from 'rebass';
-import TextLoop from 'react-text-loop';
-import { SectionLink } from 'react-scroll-section';
-import Section from '../components/Section';
-import SocialLink from '../components/SocialLink';
-import MouseIcon from '../components/MouseIcon';
-import Triangle from '../components/Triangle';
+import React, { Fragment } from "react";
+import { StaticQuery, graphql } from "gatsby";
+import { Heading, Flex, Box, Text } from "rebass";
+import TextLoop from "react-text-loop";
+import { SectionLink } from "react-scroll-section";
+import Section from "../components/Section";
+import SocialLink from "../components/SocialLink";
+import MouseIcon from "../components/MouseIcon";
+import Triangle from "../components/Triangle";
 
 const Background = () => (
   <div>
     <Triangle
       color="backgroundDark"
-      height={['35vh', '80vh']}
-      width={['95vw', '60vw']}
+      height={["35vh", "80vh"]}
+      width={["95vw", "60vw"]}
     />
 
     <Triangle
       color="secondary"
-      height={['38vh', '80vh']}
-      width={['50vw', '35vw']}
+      height={["38vh", "80vh"]}
+      width={["50vw", "35vw"]}
     />
 
     <Triangle
       color="primaryDark"
-      height={['25vh', '35vh']}
-      width={['75vw', '60vw']}
+      height={["25vh", "35vh"]}
+      width={["75vw", "60vw"]}
       invertX
     />
 
     <Triangle
       color="backgroundDark"
-      height={['20vh', '20vh']}
-      width={['100vw', '100vw']}
+      height={["20vh", "20vh"]}
+      width={["100vw", "100vw"]}
       invertX
       invertY
     />
   </div>
 );
 
-const centerHorizontally = { marginRight: 'auto', marginLeft: 'auto' };
+const centerHorizontally = { marginRight: "auto", marginLeft: "auto" };
 
 const LandingPage = () => (
   <Section.Container id="home" Background={Background}>
@@ -100,7 +100,7 @@ const LandingPage = () => (
 
             <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
               {socialLinks.map(({ id, ...rest }) => (
-                <Box mx={3} fontSize={[5, 6, 6]} key={id}>
+                <Box mx={4} fontSize={[5, 6, 6]} key={id}>
                   <SocialLink {...rest} />
                 </Box>
               ))}

@@ -38,5 +38,6 @@ module.exports = {
   section_heading: "#ff6d6d" /* salmon */,
   /* SocialLink.js */
   social_link: "#3257fa" /* royal blue */,
-  onHover_social_link: "#05d1ff" /* deep sky blue */
+  onHover_social_link: "#7c00e7" /* dark violet */,
+  onHover_underline_social_link: "#20ffb9" /* medium spring green */
 };
