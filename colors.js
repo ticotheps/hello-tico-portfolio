@@ -25,9 +25,9 @@ module.exports = {
   footer_bg: "#3257fa" /* royal blue */,
   footer_social_links: "#FFFFFF" /* white */,
   /* Header.js */
-  disappearing_navBar_bg: "#3257fa" /* royal blue */,
+  disappearing_navBar_bg: "#ff6d6d" /* salmon */,
   /* LinkAnimated.js */
-  section_heading_underline: "#7c00e7" /* dark violet */,
+  section_heading_underline: "#3257fa" /* royal blue */,
   onHover_section_heading_underline: "#20ffb9" /* medium spring green */,
   /* MarkdownRenderer.js */
   onHover_aboutMe_text_bg: "#3257fa" /* royal blue */,
@@ -35,7 +35,7 @@ module.exports = {
   mouse_icon_border: "#3257fa" /* royal blue */,
   mouse_icon_dot: "#3257fa" /* royal blue */,
   /* Section.js */
-  section_heading: "#ff6d6d" /* salmon */,
+  section_heading: "#7c00e7" /* dark violet */,
   /* SocialLink.js */
   social_link: "#3257fa" /* royal blue */,
   onHover_social_link: "#7c00e7" /* dark violet */,
