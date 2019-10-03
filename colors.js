@@ -1,6 +1,6 @@
 module.exports = {
-  /* white; links in top navBar */
-  white_colorsjs: "#FFFFFF",
+  /* royal blue; links in top navBar */
+  background: "#3257fa",
   /* light cyan; middle triangle in "Landing" section */
   backgroundDark: "#c4fffd",
   /* royal blue; title text in "Landing" section */
