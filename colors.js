@@ -20,11 +20,13 @@ module.exports = {
   card_bg: "#FFFFFF" /* white */,
   /* Footer.js */
   footer_text: "#FFFFFF" /* white */,
-  footer_bg: "#3257fa" /* dark blue */,
+  footer_bg: "#3257fa" /* royal blue */,
   footer_social_links: "#FFFFFF" /* white */,
   /* Header.js */
-  disappearing_navBar_bg: "#3257fa",
+  disappearing_navBar_bg: "#3257fa" /* royal blue */,
   /* LinkAnimated.js */
-  section_heading_underline: "#7c00e7",
-  onHover_section_heading_underline: "#20ffb9"
+  section_heading_underline: "#7c00e7" /* dark violet */,
+  onHover_section_heading_underline: "#20ffb9" /* medium spring green */,
+  /* MarkdownRenderer.js */
+  onHover_aboutMe_text_bg: "#3257fa" /* royal blue */
 };
