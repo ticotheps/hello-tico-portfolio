@@ -11,8 +11,8 @@ module.exports = {
   dark_blue_colorsjs: "#3257fa",
   /* deep sky blue; top-left triangle in "About Me" section */
   secondary: "#05d1ff",
-  /* medium spring green; stripe between "About Me" & "Projects" section */
-  secondaryLight: "#20ffb9",
+  /* deep sky blue; stripe between "About Me" & "Projects" section */
+  secondaryLight: "#05d1ff",
   /* dark blue; top-right triangle in "Landing" section + sticky navBar */
   secondaryDark: "#3257fa",
   /*------------------Components-----------------*/
@@ -31,5 +31,7 @@ module.exports = {
   onHover_aboutMe_text_bg: "#3257fa" /* royal blue */,
   /* MouseIcon.js */
   mouse_icon_border: "#3257fa" /* royal blue */,
-  mouse_icon_dot: "#3257fa" /* royal blue */
+  mouse_icon_dot: "#3257fa" /* royal blue */,
+  /* Section.js */
+  section_heading: "#ff6d6d" /* salmon */
 };
