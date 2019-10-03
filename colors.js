@@ -36,6 +36,6 @@ module.exports = {
   /* Section.js */
   section_heading: "#ff6d6d" /* salmon */,
   /* SocialLink.js */
-  social_link: "#ff6d6d" /* salmon */,
+  social_link: "#7c00e7" /* dark violet */,
   onHover_social_link: "#05d1ff" /* deep sky blue */
 };
