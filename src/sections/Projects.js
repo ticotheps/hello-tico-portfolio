@@ -49,17 +49,17 @@ const CARD_HEIGHT = "200px";
 const MEDIA_QUERY_SMALL = "@media (max-width: 400px)";
 
 const Title = styled(Text)`
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
   display: table;
-  border-bottom: ${props => props.theme.colors.primary} 4px solid;
+  border-bottom: ${props => props.theme.colors.primary} 3px solid;
 `;
 
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  font-size: 13px;
+  font-size: 12px;
   padding: 10px;
   width: 100%;
   width: calc(100% - ${CARD_HEIGHT});
@@ -81,7 +81,7 @@ const ImageContainer = styled.div`
 const ProjectImage = styled(Image)`
   width: ${CARD_HEIGHT};
   height: ${CARD_HEIGHT};
-  padding: 20px;
+  padding: 10px;
   margin-top: 0px;
 
   ${MEDIA_QUERY_SMALL} {
