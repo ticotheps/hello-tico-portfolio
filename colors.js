@@ -41,5 +41,7 @@ module.exports = {
   onHover_social_link: "#7c00e7" /* dark violet */,
   onHover_underline_social_link: "#20ffb9" /* medium spring green */,
   /* About.js */
-  profile_pic_border: "#7c00e7" /* dark violet */
+  profile_pic_border: "#7c00e7" /* dark violet */,
+  /* Projects.js */
+  project_card_font_container: "#20ffb9" /* medium spring green */
 };

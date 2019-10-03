@@ -1,64 +1,65 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Image, Text, Flex, Box } from 'rebass';
-import { StaticQuery, graphql } from 'gatsby';
-import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
-import Section from '../components/Section';
-import { CardContainer, Card } from '../components/Card';
-import SocialLink from '../components/SocialLink';
-import Triangle from '../components/Triangle';
-import ImageSubtitle from '../components/ImageSubtitle';
-import Hide from '../components/Hide';
+import React from "react";
+import PropTypes from "prop-types";
+import { Image, Text, Flex, Box } from "rebass";
+import { StaticQuery, graphql } from "gatsby";
+import styled from "styled-components";
+import Fade from "react-reveal/Fade";
+import Section from "../components/Section";
+import { CardContainer, Card } from "../components/Card";
+import SocialLink from "../components/SocialLink";
+import Triangle from "../components/Triangle";
+import ImageSubtitle from "../components/ImageSubtitle";
+import Hide from "../components/Hide";
 
 const Background = () => (
   <div>
     <Triangle
-      color="secondaryLight"
-      height={['80vh', '80vh']}
-      width={['100vw', '100vw']}
+      color="backgroundDark"
+      height={["80vh", "80vh"]}
+      width={["100vw", "100vw"]}
       invertX
     />
 
     <Triangle
       color="background"
-      height={['50vh', '20vh']}
-      width={['50vw', '50vw']}
+      height={["50vh", "20vh"]}
+      width={["50vw", "50vw"]}
       invertX
     />
 
     <Triangle
       color="primaryDark"
-      height={['25vh', '40vh']}
-      width={['75vw', '60vw']}
+      height={["25vh", "40vh"]}
+      width={["75vw", "60vw"]}
       invertX
       invertY
     />
 
     <Triangle
       color="backgroundDark"
-      height={['25vh', '20vh']}
-      width={['100vw', '100vw']}
+      height={["25vh", "20vh"]}
+      width={["100vw", "100vw"]}
       invertY
     />
   </div>
 );
 
-const CARD_HEIGHT = '200px';
+const CARD_HEIGHT = "200px";
 
-const MEDIA_QUERY_SMALL = '@media (max-width: 400px)';
+const MEDIA_QUERY_SMALL = "@media (max-width: 400px)";
 
 const Title = styled(Text)`
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   display: table;
-  border-bottom: ${props => props.theme.colors.primary} 5px solid;
+  border-bottom: ${props => props.theme.colors.primary} 4px solid;
 `;
 
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
+  font-size: 13px;
   padding: 10px;
   width: 100%;
   width: calc(100% - ${CARD_HEIGHT});
@@ -80,7 +81,7 @@ const ImageContainer = styled.div`
 const ProjectImage = styled(Image)`
   width: ${CARD_HEIGHT};
   height: ${CARD_HEIGHT};
-  padding: 40px;
+  padding: 20px;
   margin-top: 0px;
 
   ${MEDIA_QUERY_SMALL} {
@@ -103,15 +104,7 @@ const ProjectTag = styled.div`
   }
 `;
 
-const Project = ({
-  name,
-  description,
-  projectUrl,
-  repositoryUrl,
-  type,
-  publishedDate,
-  logo,
-}) => (
+const Project = ({ name, description, projectUrl, repositoryUrl, logo }) => (
   <Card p={0}>
     <Flex style={{ height: CARD_HEIGHT }}>
       <TextContainer>
@@ -120,7 +113,7 @@ const Project = ({
             {name}
           </Title>
         </span>
-        <Text width={[1]} style={{ overflow: 'auto' }}>
+        <Text width={[1]} style={{ overflow: "auto" }}>
           {description}
         </Text>
       </TextContainer>
@@ -128,32 +121,34 @@ const Project = ({
       <ImageContainer>
         <ProjectImage src={logo.image.src} alt={logo.title} />
         <ProjectTag>
-          <Flex
-            style={{
-              float: 'right',
-            }}
+          <ImageSubtitle
+            bg="project_card_font_container"
+            y="bottom"
+            x="right"
+            round
           >
-            <Box mx={1} fontSize={5}>
-              <SocialLink
-                name="Check repository"
-                fontAwesomeIcon="github"
-                url={repositoryUrl}
-              />
-            </Box>
-            <Box mx={1} fontSize={5}>
-              <SocialLink
-                name="See project"
-                fontAwesomeIcon="globe"
-                url={projectUrl}
-              />
-            </Box>
-          </Flex>
-          <ImageSubtitle bg="primary" color="white" y="bottom" x="right" round>
-            {type}
+            <Flex
+              style={{
+                float: "right"
+              }}
+            >
+              <Box mx={1} fontSize={5}>
+                <SocialLink
+                  name="See GitHub Repo"
+                  fontAwesomeIcon="github-alt"
+                  url={repositoryUrl}
+                />
+              </Box>
+              <Box mx={1} fontSize={5}>
+                <SocialLink
+                  name="Demo Project"
+                  fontAwesomeIcon="play-circle"
+                  url={projectUrl}
+                />
+              </Box>
+            </Flex>
           </ImageSubtitle>
-          <Hide query={MEDIA_QUERY_SMALL}>
-            <ImageSubtitle bg="backgroundDark">{publishedDate}</ImageSubtitle>
-          </Hide>
+          <Hide query={MEDIA_QUERY_SMALL}></Hide>
         </ProjectTag>
       </ImageContainer>
     </Flex>
@@ -169,10 +164,10 @@ Project.propTypes = {
   publishedDate: PropTypes.string.isRequired,
   logo: PropTypes.shape({
     image: PropTypes.shape({
-      src: PropTypes.string,
+      src: PropTypes.string
     }),
-    title: PropTypes.string,
-  }).isRequired,
+    title: PropTypes.string
+  }).isRequired
 };
 
 const Projects = () => (
