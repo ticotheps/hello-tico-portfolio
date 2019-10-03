@@ -1,18 +1,18 @@
-import React from 'react';
-import { Link } from 'rebass';
-import Tippy from '@tippy.js/react';
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import FontAwesomeIcon from 'react-fontawesome';
+import React from "react";
+import { Link } from "rebass";
+import Tippy from "@tippy.js/react";
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import FontAwesomeIcon from "react-fontawesome";
 
 const IconLink = styled(Link)`
   transition: color 0.5s;
   color: ${props =>
-    props.theme.colors[props.color] || props.theme.colors.primary};
+    props.theme.colors[props.color] || props.theme.colors.social_link};
   text-decoration: none;
 
   &:hover {
-    color: ${props => props.theme.colors.primaryLight};
+    color: ${props => props.theme.colors.onHover_social_link};
   }
 `;
 
@@ -34,7 +34,7 @@ SocialLink.propTypes = {
   fontAwesomeIcon: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
-  color: PropTypes.string,
+  color: PropTypes.string
 };
 
 export default SocialLink;
