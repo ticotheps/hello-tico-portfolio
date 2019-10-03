@@ -6,7 +6,7 @@ module.exports = {
   /* royal blue; title text in "Landing" section */
   primary: "#3257fa",
   /* dark violet; used to underline text (i.e. - section headers) */
-  // primaryLight: '#7c00e7',
+  primaryLight: "#7c00e7",
   /* dark blue; top-right triangle in "Landing" section + sticky navBar */
   dark_blue_colorsjs: "#3257fa",
   /* deep sky blue; top-left triangle in "About Me" section */
@@ -25,5 +25,6 @@ module.exports = {
   /* Header.js */
   disappearing_navBar_bg: "#3257fa",
   /* LinkAnimated.js */
-  section_heading_underline: "#7c00e7"
+  section_heading_underline: "#7c00e7",
+  onHover_section_heading_underline: "#20ffb9"
 };

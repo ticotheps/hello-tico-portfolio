@@ -18,7 +18,8 @@ const LinkAnimated = styled.span`
     right: 0;
     width: 0;
     bottom: -5px;
-    background: ${props => props.theme.colors.secondaryLight};
+    background: ${props =>
+      props.theme.colors.onHover_section_heading_underline};
     height: 5px;
     transition-property: width;
     transition-duration: 0.3s;
