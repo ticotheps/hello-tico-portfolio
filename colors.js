@@ -1,6 +1,6 @@
 module.exports = {
-  /* royal blue; links in top navBar */
-  background: "#3257fa",
+  /* white; links in top navBar */
+  background: "#FFFFFF",
   /* light cyan; middle triangle in "Landing" section */
   backgroundDark: "#c4fffd",
   /* royal blue; title text in "Landing" section */
@@ -8,7 +8,7 @@ module.exports = {
   /* dark violet; used to underline text (i.e. - section headers) */
   primaryLight: "#7c00e7",
   /* dark blue; top-right triangle in "Landing" section + sticky navBar */
-  dark_blue_colorsjs: "#3257fa",
+  primaryDark: "#3257fa",
   /* deep sky blue; top-left triangle in "About Me" section */
   secondary: "#05d1ff",
   /* deep sky blue; stripe between "About Me" & "Projects" section */
