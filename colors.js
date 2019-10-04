@@ -16,7 +16,7 @@ module.exports = {
   secondaryLight: "#05d1ff" /* deep sky blue */,
   /* top-right triangle in "Landing" section + sticky navBar */
   secondaryDark: "#3257fa" /* royal blue */,
-  /*------------------Components-----------------*/
+  /*-----------------------Components-------------------------*/
   /* Card.js */
   card_bg: "#FFFFFF" /* white */,
   onHover_card_bg: "#20ffb9" /* medium spring green */,
@@ -25,7 +25,7 @@ module.exports = {
   footer_bg: "#3257fa" /* royal blue */,
   footer_social_links: "#FFFFFF" /* white */,
   /* Header.js */
-  disappearing_navBar_bg: "#ff6d6d" /* salmon */,
+  disappearing_navBar_bg: "#05d1ff" /* deep sky blue */,
   /* LinkAnimated.js */
   section_heading_underline: "#3257fa" /* royal blue */,
   onHover_section_heading_underline: "#20ffb9" /* medium spring green */,
