@@ -1,5 +1,5 @@
 <a href="https://hirelambdastudents.com/student/profile/102">
-    <img src="./media/tico-headshot.png" title="Tico smiling with shirt and tie on" width="100" align="right">
+    <img src="./media/tico_headshot.png" title="Tico smiling with shirt and tie on" width="100" align="right">
 </a>
 
 # [Tico's Portfolio Site](https://hellotico.com/)
