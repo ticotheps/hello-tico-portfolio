@@ -15,7 +15,9 @@
 <br/>
 
 <p align="center">
+  <a href="https://hellotico.com" target="_blank">
     <img src="hello-tico-demo.gif" alt="portfolio site walk-through" width="600">
+  </a>
 </p>
 
 This portfolio site utilizes the "Mate" starter for Gatsby (integrated with Contentful CMS) by Ema Suriano!
