@@ -1,7 +1,7 @@
 {
-  "name": "hey-tico-portfolio",
+  "name": "hello-tico-portfolio",
   "version": "1.0.0",
-  "description": "Tico S. Thepsourinthone's Portfolio",
+  "description": "Tico S. Thepsourinthone's Portfolio Site",
   "main": "index.js",
   "scripts": {
     "build": "gatsby clean && gatsby build",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ticotheps/hey-tico-portfolio.git"
+    "url": "git+https://github.com/ticotheps/hello-tico-portfolio.git"
   },
   "keywords": [
     "gatsby",
@@ -27,9 +27,9 @@
   "author": "Tico S. Thepsourinthone",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ticotheps/hey-tico-portfolio/issues"
+    "url": "https://github.com/ticotheps/hello-tico-portfolio/issues"
   },
-  "homepage": "https://heytico.com",
+  "homepage": "https://hellotico.com",
   "dependencies": {
     "@tippy.js/react": "^2.2.3",
     "contentful": "^7.0.3",
