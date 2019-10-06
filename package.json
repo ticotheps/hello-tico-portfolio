@@ -1,6 +1,6 @@
 {
   "name": "hello-tico-portfolio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tico S. Thepsourinthone's Portfolio Site",
   "main": "index.js",
   "scripts": {
