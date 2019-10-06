@@ -1,4 +1,4 @@
-# [Tico's Portfolio Site](https://heytico.com/)
+# [Tico's Portfolio Site](https://hellotico.com/)
 
 [![Travis badge](https://api.travis-ci.org/EmaSuriano/gatsby-starter-mate.svg)](https://travis-ci.org/EmaSuriano/gatsby-starter-mate)
 [![eslint](https://img.shields.io/badge/eslint-enabled-green.svg)](https://eslint.org/)
